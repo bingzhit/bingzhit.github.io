@@ -20,5 +20,16 @@
     <body>
         <h1>欢迎来到我的个人网站！</h1>
         <p>这是我的第一个Github Pages网站。</p>
+
+        <!-- // 以下嵌入页面，page.url以 "/" 开头
+        <nav>
+        {% for item in site.nav %}
+            <a href="{{ item.link }}" 
+            {% if page.url == item.link %} style="color: red;" {% endif %}
+            >
+            {{ item.name }}
+            </a>
+        {% endfor %}
+        </nav> -->
     </body>
 </html>
